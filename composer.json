@@ -1,0 +1,26 @@
+{
+    "name": "jakson/notification",
+    "description": "e-mail notification",
+    "type": "library",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Notification\\": "_app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jakson Ceschin",
+            "email": "jlceschin@gmail.com",
+            "homepage": "https://www.ceschinsys.com.br",
+            "role": "developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "6.5.3"
+    },
+    "config":{
+        "vendor-dir": "lib_ext"
+    }
+}

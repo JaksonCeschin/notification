@@ -1,34 +1,33 @@
-# Notification library via email using phpMailer
+# Email Notification Library using phpMailer
 
-This library has the function of sending email using the phpmailer library. Doing this action in an uncomplicated way is essential for any system.
+This library has the function of sending e-mail using the phpmailer library. Doing this in an uncomplicated way is essential for any system.
 
-To install the library, run the following command: for all users
+To install the library, run the following command:
 
 ```sh
-composer require gustavoweb/composer_test
+composer require gustavoweb/composer_teste
 ```
 
-To make use of the library, just require composer to autoload, invoke the class and call the method:
+To make use of the library, simply require the autoload of the composer, invoke the class and make the method call:
 
 ```sh
-<?php
+<? php
 
 require __DIR__ . '/vendor/autoload.php';
 
 USE Notification\Email;
 
-$email = new Email(2, "mail.host.com", "your@email.com", "your-pass", "smtp secure (tls/ssl)", "port(587)",
-    "from@email.com", "From Name");
+$mail = new Email (2, "mail.host.com", "your@email.com", "your-pass", "smtp secure (tls / ssl)", "port (587)", "from@email.com", "From Name");
 
-$email->sendEmail("SUbject", "Content", "reply@email.com", "Replay Name", "address@email.com", "Address Name");
+$email-> sendEmail ("Subject", "Content", "reply@email.com", "Replay Name", "address@email.com", "Address Name");
 ```
 
-Note that the entire configuration of sending the email is using the magic constructor method! Once the constructor method is invoked within your application, your system will be able to trigger the triggers.
+Note that the entire configuration of sending the email is using the magic method builder! Once you've invoked the constructor method within your application, your system will be able to fire the shots.
 
 ### Developers
-* [Gustavo Web] - Developer of this library and tutor of the Composer in Practice course!
-* [Robson V. Leite] - CEO and Founder UpInside Training
-* [UpInside Trainings] - Official website of your programming and digital marketing school
+* [Gustavo Web] - Developer of this library and tutor of the course Composer in the Practice!
+* [Robson V. Leite] - CEO and Founder UpInside Treinamentos
+* [UpInside Treinamentos] - Official site of your digital marketing and programming school
 * [phpMailer] - Lib to send Email
 
 License
@@ -36,10 +35,10 @@ License
 
 MIT
 
-**Another UpInside Training course, make good use of it!**
+** Plus One UpInside Training Courses, Make Good Use! **
 
-[//]:#
-[Gustavo Web]: <mailto:gustavo@upinside.com.br>
-[Robson V. Leite]: <mailto:robson@upinside.com.br>
-[UpInside Training]: <https://www.upinside.com.br>
+[//]: #
+[Gustavo Web]: <mailto: gustavo@upinside.com.br>
+[Robson V. Leite]: <mailto: robson@upinside.com.br>
+[UpInside Treinamentos]: <https://www.upinside.com.br>
 [phpMailer]: <https://github.com/PHPMailer/PHPMailer>
